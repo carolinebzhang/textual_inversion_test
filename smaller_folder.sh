@@ -11,7 +11,7 @@ destination_dir="./distinct_angles/distinct_angles/001_2500"
 counter=0
 for file in "$source_dir"/*; do
     if [ $counter -lt 2500 ]; then
-        mv "$file" "$destination_dir"
+        cp "$file" "$destination_dir"
         counter=$((counter+1))
     else
         break
