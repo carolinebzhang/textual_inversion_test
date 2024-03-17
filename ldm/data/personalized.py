@@ -4,7 +4,7 @@ import PIL
 from PIL import Image
 from torch.utils.data import Dataset
 from torchvision import transforms
-
+from filter import catch_image
 import random
 
 imagenet_templates_smallest = [
@@ -145,8 +145,14 @@ class PersonalizedBase(Dataset):
                  ):
 
         self.data_root = data_root
+        valid_paths = []
+        for file_path in os.listdir(self.data_root):
+            if catch_image(file_path):
+                valid_paths.append(file_path)
 
-        self.image_paths = [os.path.join(self.data_root, file_path) for file_path in os.listdir(self.data_root)]
+        #self.image_paths = [os.path.join(self.data_root, file_path) for file_path in os.listdir(self.data_root)]
+        self.image_paths = [os.path.join(self.data_root, file_path) for file_path in valid_paths]
+
 
         # self._length = len(self.image_paths)
         self.num_images = len(self.image_paths)
@@ -215,4 +221,4 @@ class PersonalizedBase(Dataset):
             return example
         except Exception as e:
             print(e)
-            print(self.image_paths)
+            #print(self.image_paths)
