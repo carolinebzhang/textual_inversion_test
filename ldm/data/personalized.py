@@ -147,7 +147,7 @@ class PersonalizedBase(Dataset):
         self.data_root = data_root
         valid_paths = []
         for file_path in os.listdir(self.data_root):
-            if catch_image(file_path):
+            if catch_image(file_path) and len(valid_paths)<2500:
                 valid_paths.append(file_path)
             if len(valid_paths) > 2500:
                 break
