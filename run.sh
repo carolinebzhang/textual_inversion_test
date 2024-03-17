@@ -5,7 +5,7 @@ SBATCH -p gpu --gres=gpu:1
 
 # Request 1 CPU core
 SBATCH -n 4
-SBATCH -t 12:00:00
+SBATCH -t 05:00:00
 SBATCH -g 120g
 
 # Load a CUDA module
