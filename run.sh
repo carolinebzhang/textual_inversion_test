@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Request a GPU partition node and access to 1 GPU
-SBATCH -p gpu --gres=gpu:2
+SBATCH -p gpu --gres=gpu:1 -n 4 -t 00:30:00 -g 120g
 
 # Request 1 CPU core
-SBATCH -n 4
-SBATCH -t 00:30:00
-SBATCH -g 120g
+# SBATCH -n 4
+# SBATCH -t 00:30:00
+# SBATCH -g 120g
 
 # Load a CUDA module
 module load cuda
