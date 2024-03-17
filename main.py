@@ -423,6 +423,7 @@ class ImageLogger(Callback):
             try:
                 self.log_steps.pop(0)
             except IndexError as e:
+                print("main line 426")
                 print(e)
                 pass
             return True
@@ -822,4 +823,5 @@ if __name__ == "__main__":
             os.makedirs(os.path.split(dst)[0], exist_ok=True)
             os.rename(logdir, dst)
         if trainer.global_rank == 0:
+            print("main line 826")
             print(trainer.profiler.summary())
