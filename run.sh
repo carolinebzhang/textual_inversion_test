@@ -4,7 +4,7 @@
 #SBATCH -N 1 
 #SBATCH -n 4
 #SBATCH -t 12:00:00
-#SBATCH -mem=120G
+#SBATCH -m 120g
 
 
 
