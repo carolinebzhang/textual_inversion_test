@@ -4,7 +4,7 @@ import os
 import shutil
 def catch_image(filepath):
     try: 
-        filepath = "./distinct_angles/distinct_angles/" + filepath
+        filepath = "./distinct_angles/distinct_angles/001/" + filepath
         Image.open(filepath)
     except Exception as e:
         try: 
