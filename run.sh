@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # SBATCH -p gpu --gres=gpu:1 
-
-# SBATCH -n 4
 # SBATCH -N 4 
+# SBATCH -n 4
 # SBATCH -t 00:30:00
 # SBATCH -mem=120G
 
