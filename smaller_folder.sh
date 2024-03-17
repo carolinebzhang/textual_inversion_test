@@ -5,7 +5,7 @@ source_dir="./distinct_angles/distinct_angles/001"
 destination_dir="./distinct_angles/distinct_angles/001_2500"
 
 # Create the destination directory if it doesn't exist
-mkdir -p "$destination_dir"
+#mkdir -p "$destination_dir"
 
 # Move 2500 images from the source directory to the destination directory
 counter=0
