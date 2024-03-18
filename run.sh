@@ -3,7 +3,7 @@
 #SBATCH -p gpu --gres=gpu:1 
 #SBATCH -n 4
 #SBATCH -t 5:00:00
-#SBATCH -m 120g
+#SBATCH --mem=120G
 
 module load cuda
 conda init
