@@ -17,4 +17,4 @@ conda activate ldm
 source activate ldm
 
 
-python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n trial --gpus 0, --data_root distinct_angles/distinct_angles/001_150 --init_word sidebottom
+python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n trial --gpus 0, --data_root distinct_angles/distinct_angles/001_150 --init_word side
