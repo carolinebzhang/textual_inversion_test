@@ -20,4 +20,4 @@ conda activate ldm
 source activate ldm
 
 
-python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n trial --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/001_150 --init_word side
+python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n repeat_5_mx_73200_001_multiple_sidebelow --gpus 0, --no-test True --data_root distinct_angles/001_multiple --init_word sidebelow

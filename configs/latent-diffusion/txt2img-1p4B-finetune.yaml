@@ -94,7 +94,7 @@ data:
         size: 256
         set: train
         per_image_tokens: false
-        repeats: 2 #100 #can change - what 100 means that each image in dataset can be copied 100 times (so training set increases)
+        repeats: 3 #100 #can change - what 100 means that each image in dataset can be copied 100 times (so training set increases)
         #reduce repeats from 100 to 10, or even 1, 
     validation:
       target: ldm.data.personalized.PersonalizedBase
