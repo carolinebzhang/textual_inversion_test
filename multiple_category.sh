@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Source directory containing PNG files
-src_dir="/users/czhan157/Downloads/textual_inversion_test/distinct_angles/distinct_angles"
+src_dir="/users/czhan157/Downloads/textual_inversion_test/distinct_angles/distinct_angles/001"
 
 # Destination directory to copy selected images
 dest_dir="/users/czhan157/Downloads/textual_inversion_test/distinct_angles/001_multiple"
