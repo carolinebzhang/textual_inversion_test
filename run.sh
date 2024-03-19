@@ -2,7 +2,7 @@
 
 #SBATCH -p gpu --gres=gpu:1 
 #SBATCH -n 4
-#SBATCH -t 5:00:00
+#SBATCH -t 2:00:00
 #SBATCH --mem=120G
 module load miniconda3/23.11.0s
 module load cuda
@@ -17,4 +17,4 @@ conda activate ldm
 source activate ldm
 
 
-python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n trial --gpus 0, --data_root distinct_angles/distinct_angles/001_150 --init_word side
+python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n trial --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/001_150 --init_word side
