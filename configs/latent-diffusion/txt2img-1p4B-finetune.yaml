@@ -84,8 +84,9 @@ model:
 data:
   target: main.DataModuleFromConfig
   params:
-    batch_size: 4
-    num_workers: 2
+    batch_size: 4 #increase once you request a different gpu
+    num_workers: 1 #default is 2 #reduce num workers to 1(?) when youre training/optimizing embedding, num workers just loads data in parallel
+    #if you have 8 images, it'll keep another batch loaded. If i use just 1 worker only one batch will be loaded at once
     wrap: false
     train:
       target: ldm.data.personalized.PersonalizedBase
@@ -93,14 +94,15 @@ data:
         size: 256
         set: train
         per_image_tokens: false
-        repeats: 100
+        repeats: 2 #100 #can change - what 100 means that each image in dataset can be copied 100 times (so training set increases)
+        #reduce repeats from 100 to 10, or even 1, 
     validation:
       target: ldm.data.personalized.PersonalizedBase
       params:
         size: 256
         set: val
         per_image_tokens: false
-        repeats: 10
+        repeats: 1 #can change as well #default 10
 
 lightning:
   modelcheckpoint:
@@ -116,4 +118,4 @@ lightning:
 
   trainer:
     benchmark: True
-    max_steps: 18300 #6100
+    max_steps: 73200 #18300 #6100 #increase max steps by 10 times, maybe increase by a lot more, 
