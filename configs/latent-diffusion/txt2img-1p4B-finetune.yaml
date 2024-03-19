@@ -22,7 +22,7 @@ model:
       target: ldm.modules.embedding_manager.EmbeddingManager
       params:
         placeholder_strings: ["*"]
-        initializer_words: ["side_view_from_slightly_below"]
+        initializer_words: ["sculpture"]
         per_image_tokens: false
         num_vectors_per_token: 1
         progressive_words: False
@@ -116,4 +116,4 @@ lightning:
 
   trainer:
     benchmark: True
-    max_steps: 12200 #changed from 6100
+    max_steps: 6100
