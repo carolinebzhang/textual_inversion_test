@@ -6,6 +6,8 @@
 #SBATCH --mem=120G
 module load miniconda3/23.11.0s
 module load cuda
+eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
+
 #conda init
 #conda deactivate
 #conda deactivate
