@@ -8,7 +8,8 @@
 module load cuda
 conda init
 conda deactivate
-conda deactivate
+conda init
+echo $(conda env list)
 conda activate ldm
 
 
