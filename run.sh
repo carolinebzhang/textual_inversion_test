@@ -1,7 +1,6 @@
 #!/bin/bash
 
-#SBATCH -p 3090-gcondo,gpu --gres=gpu:1
-
+#SBATCH -p gpu --gres=gpu:1
 #SBATCH -N 1
 
 #SBATCH -n 4
@@ -14,6 +13,7 @@ eval "$(command conda 'shell.bash' 'hook' 2> /dev/null)"
 #conda init
 #conda deactivate
 #conda deactivate
+#placeholder -p 3090-gcondo,gpu --gres=gpu:1
 conda deactivate
 echo "$(conda env list)"
 conda activate ldm
