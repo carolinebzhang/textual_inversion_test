@@ -4,12 +4,13 @@
 #SBATCH -n 4
 #SBATCH -t 5:00:00
 #SBATCH --mem=120G
-
+module load miniconda3/23.11.0s
 module load cuda
 conda init
 conda deactivate
-conda init
-echo $(conda env list)
+conda deactivate
+conda deactivate
+echo "$(conda env list)"
 conda activate ldm
 
 
