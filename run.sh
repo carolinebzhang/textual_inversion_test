@@ -3,7 +3,7 @@
 #SBATCH -p 3090-gcondo,gpu --gres=gpu:1
 #SBATCH -N 1
 #SBATCH -n 4
-#SBATCH -t 2:00:00
+#SBATCH -t 6:00:00
 #SBATCH --mem=120G
 module load miniconda3/23.11.0s
 module load cuda
