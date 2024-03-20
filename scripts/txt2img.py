@@ -111,8 +111,13 @@ if __name__ == "__main__":
         "--embedding_path", 
         type=str, 
         help="Path to a pre-trained embedding manager checkpoint")
+    try: 
+        print(parser._get_args())
+    except Exception as e:
+        print(e)
 
     opt = parser.parse_args()
+    print(opt)
 
 
     config = OmegaConf.load("configs/latent-diffusion/txt2img-1p4B-eval_with_tokens.yaml")  # TODO: Optionally download from same location as ckpt and chnage this logic
