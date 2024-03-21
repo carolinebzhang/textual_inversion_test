@@ -44,17 +44,17 @@ source activate ldm
 
 # for front view
 
-python3 scripts/txt2img.py --outdir outputs/003 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/logs/003_3002024-03-20T17-08-25_R50SM18600D003front/checkpoints/embeddings_gs-18299.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * train"
+python3 scripts/txt2img.py --outdir outputs/003 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/003_3002024-03-20T17-08-25_R50SM18600D003front/checkpoints/embeddings_gs-18299.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * train"
 
-python3 scripts/txt2img.py --outdir outputs/003 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/logs/003_3002024-03-20T17-08-25_R50SM18600D003front/checkpoints/embeddings_gs-18299.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * car"
+python3 scripts/txt2img.py --outdir outputs/003 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/003_3002024-03-20T17-08-25_R50SM18600D003front/checkpoints/embeddings_gs-18299.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * car"
 
-python3 scripts/txt2img.py --outdir outputs/003 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/logs/003_3002024-03-20T17-08-25_R50SM18600D003front/checkpoints/embeddings_gs-18299.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * chair"
+python3 scripts/txt2img.py --outdir outputs/003 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/003_3002024-03-20T17-08-25_R50SM18600D003front/checkpoints/embeddings_gs-18299.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * chair"
 
 # for march 18 side view
 
-python3 scripts/txt2img.py --outdir outputs/001 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/logs/001_1502024-03-18T22-29-43_trial/checkpoints/embeddings_gs-6099.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * train"
+python3 scripts/txt2img.py --outdir outputs/001 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/001_1502024-03-18T22-29-43_trial/checkpoints/embeddings_gs-6099.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * train"
 
-python3 scripts/txt2img.py --outdir outputs/001 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/logs/001_1502024-03-18T22-29-43_trial/checkpoints/embeddings_gs-6099.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * car"
+python3 scripts/txt2img.py --outdir outputs/001 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/001_1502024-03-18T22-29-43_trial/checkpoints/embeddings_gs-6099.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * car"
 
-python3 scripts/txt2img.py --outdir outputs/001 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/logs/001_1502024-03-18T22-29-43_trial/checkpoints/embeddings_gs-6099.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * chair"
+python3 scripts/txt2img.py --outdir outputs/001 --ddim_eta 0.0 --n_samples 8 --n_iter 2 --scale 10.0 --ddim_steps 50 --embedding_path logs/001_1502024-03-18T22-29-43_trial/checkpoints/embeddings_gs-6099.pt --ckpt_path models/ldm/text2img-large/model.ckpt --prompt "picture of * chair"
 
