@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set the source and destination directories
-source_dir="./distinct_angles/distinct_angles/002"
-destination_dir="./distinct_angles/distinct_angles/002_300"
+source_dir="./distinct_angles/distinct_angles/003"
+destination_dir="./distinct_angles/distinct_angles/003_300"
 
 # Create the destination directory if it doesn't exist
 #mkdir -p "$destination_dir"
