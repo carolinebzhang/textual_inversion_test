@@ -94,7 +94,7 @@ data:
         size: 256
         set: train
         per_image_tokens: false
-        repeats: 50 #100 #can change - what 100 means that each image in dataset can be copied 100 times (so training set increases)
+        repeats: 80 #100 #can change - what 100 means that each image in dataset can be copied 100 times (so training set increases)
         #reduce repeats from 100 to 10, or even 1, 
     validation:
       target: ldm.data.personalized.PersonalizedBase
@@ -118,4 +118,4 @@ lightning:
 
   trainer:
     benchmark: True
-    max_steps: 18300 #18300 #6100 #increase max steps by 10 times, maybe increase by a lot more, 
+    max_steps: 12200 #18300 #6100 #increase max steps by 10 times, maybe increase by a lot more, 
