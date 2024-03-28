@@ -20,18 +20,25 @@ conda activate ldm
 source activate ldm
 
 
-python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R80SM12200D002pose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/002_300 --init_word pose
+#python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R80SM12200D002pose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/002_300 --init_word pose
 
-python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R80SM12200D004pose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/003_400 --init_word pose
+#python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R80SM12200D004pose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/003_400 --init_word pose
 
-python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R80SM12200D005pose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/005_300 --init_word pose
+#python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R80SM12200D005pose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/005_300 --init_word pose
 
-python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R80SM12200D006pose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/006_300 --init_word pose
+#python3 main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R80SM12200D006pose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/006_300 --init_word pose
 
 
-python3 main.py --base configs/latent-diffusion/bigger_config.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R10SM12200D001ALLpose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/001 --init_word pose
+python3 main.py --base configs/latent-diffusion/bigger_config.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R10SM12200D001ALL_again_pose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/001 --init_word pose --accumulate_grad_batches 10
 
-python3 main.py --base configs/latent-diffusion/bigger_config.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R10SM12200D003ALLpose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/003 --init_word pose
+python3 main.py --base configs/latent-diffusion/bigger_config.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R10SM12200D002ALL_again_pose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/002 --init_word pose --accumulate_grad_batches 10
 
-python3 main.py --base configs/latent-diffusion/bigger_config.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R10SM12200D005ALLpose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/005 --init_word pose
+python3 main.py --base configs/latent-diffusion/bigger_config.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R10SM12200D003ALLpose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/003 --init_word pose --accumulate_grad_batches 10
+
+python3 main.py --base configs/latent-diffusion/bigger_config.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R10SM12200D004ALLpose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/004 --init_word pose --accumulate_grad_batches 10
+
+python3 main.py --base configs/latent-diffusion/bigger_config.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R10SM12200D005ALLpose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/005 --init_word pose --accumulate_grad_batches 10
+
+python3 main.py --base configs/latent-diffusion/bigger_config.yaml -t --actual_resume models/ldm/text2img-large/model.ckpt -n R10SM12200D006ALLpose --gpus 0, --no-test True --data_root distinct_angles/distinct_angles/006 --init_word pose --accumulate_grad_batches 10
+
 
